@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "322084002112",
+    "project_id": "cryptopaocal",
+    "storage_bucket": "cryptopaocal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:322084002112:android:c54c5f0f4f001237d402a5",
+        "android_client_info": {
+          "package_name": "com.example.incontrol_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "322084002112-010fhin1su6ro5dh3brphm23ji39qmd0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDl8t3tpN_hv1M9s1qWaK4w3IVvVuE1t1Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "322084002112-010fhin1su6ro5dh3brphm23ji39qmd0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "322084002112-iq30qp19a0cuuvjurp7ckkivflv4801o.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.incontrolFlutter"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,3 @@
+#include? "Pods/Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"
+#include "Generated.xcconfig"
+GOOGLE_SERVICE_REVERSED_CLIENT_ID = com.googleusercontent.apps.322084002112-iq30qp19a0cuuvjurp7ckkivflv4801o

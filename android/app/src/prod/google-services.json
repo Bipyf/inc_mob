@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "365629299485",
+    "project_id": "app-incontrol",
+    "storage_bucket": "app-incontrol.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365629299485:android:1cd4568beeb7f95e04dff4",
+        "android_client_info": {
+          "package_name": "com.incontrol.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "365629299485-eiegd4q9l5f2j60rvv24qavmaden2uji.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJv7am8SsjkTj14r4PV0u2NMo6BILlFxg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "365629299485-eiegd4q9l5f2j60rvv24qavmaden2uji.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "365629299485-5dlcjbdfa2i5fvc9sb2255dnulmh6lpo.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.incontrol"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
