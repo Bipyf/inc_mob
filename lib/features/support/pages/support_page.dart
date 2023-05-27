@@ -69,7 +69,7 @@ class SupportPage extends StatelessWidget {
                                       ),
                                       Center(
                                         child: Image.asset(
-                                          'assets/images/macbook.jpeg',
+                                          'assets/images/macbook.png',
                                           width: 250.w,
                                         ),
                                       ),
@@ -130,7 +130,7 @@ class SupportPage extends StatelessWidget {
                               Column(
                                 children: [
                                   Image.asset(
-                                    'assets/images/macbook.jpeg',
+                                    'assets/images/macbook.png',
                                     width: 130.w,
                                   ),
                                   Spacer()

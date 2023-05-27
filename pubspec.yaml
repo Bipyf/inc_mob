@@ -35,7 +35,7 @@ dependencies:
   rename: ^2.0.1
   google_nav_bar: ^5.0.6
   line_icons: ^2.0.1
-  intl: ^0.18.1
+  intl: ^0.17.0
 dev_dependencies:
   build_runner:
   flutter_test:

@@ -25,7 +25,7 @@ class AppCubit extends Cubit<AppState> {
   final role =  securestorage.read(key: "idRole");
 
   void onCurrentUserChanged(bool? result) {
-    // print('user now: $result');
+    print('user now: $result');
   
 
     emit(
@@ -33,7 +33,7 @@ class AppCubit extends Cubit<AppState> {
         currentUser: result,
       ),
     );
-    // print('user after call ${state.currentUser}');
+   print('user after call ${state.currentUser}');
   }
 
   void navigateTo(NavigationPage routeName) {

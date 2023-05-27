@@ -118,8 +118,9 @@ class LoginPage extends StatelessWidget {
                                         .read<SignUpCubit>()
                                         .loginWithCredentials();  
                                     FocusScope.of(context).unfocus();
-                                    Future.delayed( const Duration(seconds: 2), () => {
-                                    if (state.errorText=='Error: Wrong username or password') {
+                                    Future.delayed( const Duration(seconds:2), () => {
+                                print(state.status),
+                                    if (state.status == LoginStatus.success) {
                                     
                                     context.read<AppCubit>().navigateTo(const NavigationPage.profilePage())}
                                   

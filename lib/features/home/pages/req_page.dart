@@ -112,10 +112,15 @@ class ReqPage extends StatelessWidget {
                                                       height: 20.h,
                                                     ),
                                                     Text('Дата создания: ' +
-                                                        state
-                                                            .incontrolLevelsList![
-                                                                indexo]
-                                                            .reg_date!),
+                                                        DateFormat(
+                                                          "dd/MM/yyyy | HH:mm")
+                                                      .format(DateFormat(
+                                                              "yyyy-MM-ddTHH:mm:ssZ")
+                                                          .parseUTC(state
+                                                              .incontrolLevelsList![
+                                                                  indexo]
+                                                              .reg_date!)
+                                                          .toLocal()), style: TextStyle(color: Theme.of(context).colorScheme.inversePrimary),),
                                                     SizedBox(
                                                       height: 12.h,
                                                     ),
@@ -124,13 +129,10 @@ class ReqPage extends StatelessWidget {
                                                             .incontrolLevelsList![
                                                                 indexo]
                                                             .id
-                                                            .toString()),
+                                                            .toString(), style: TextStyle(color: Theme.of(context).colorScheme.inversePrimary)),
                                                     SizedBox(
                                                       height: 20.h,
                                                     ),
-                                                    TextFieldLabel(
-                                                        label:
-                                                            'Принять заявку?'),
                                                     SizedBox(
                                                       height: 30.h,
                                                     ),
@@ -161,8 +163,10 @@ class ReqPage extends StatelessWidget {
                                                                 .read<
                                                                     ReqCubit>()
                                                                 .put(data);
+                                                             Navigator.of(context).pop();
                                                           },
                                                           isActive: true),
+                                                          SizedBox(height: 10,),
                                                       incontrolElevatedButton(
                                                           topPadding: 10,
                                                           label: "Удалить",
@@ -217,6 +221,7 @@ class ReqPage extends StatelessWidget {
                                                                 .put(data);
                                                           },
                                                           isActive: true),
+                                                          SizedBox(height: 10,),
                                                       incontrolElevatedButton(
                                                           topPadding: 10,
                                                           label: "Удалить",
@@ -310,7 +315,7 @@ class ReqPage extends StatelessWidget {
                                           Column(
                                             children: [
                                               Image.asset(
-                                                'assets/images/macbook.jpeg',
+                                                'assets/images/macbook.png',
                                                 width: 130.w,
                                               ),
                                               Spacer()
@@ -336,7 +341,7 @@ class ReqPage extends StatelessWidget {
                                                           .toLocal()),
                                                   style: TextStyle(
                                                     color:
-                                                        const Color(0xFF0D1526),
+                                                        Theme.of(context).colorScheme.inversePrimary,
                                                     fontWeight: FontWeight.w700,
                                                     fontStyle: FontStyle.normal,
                                                     fontSize: 16.sp,

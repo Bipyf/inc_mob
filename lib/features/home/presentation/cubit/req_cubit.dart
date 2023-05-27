@@ -28,11 +28,13 @@ class ReqCubit extends Cubit<ReqState> {
 
   Future<void> put(data) async {
     await addincontrolService.put(data);
+    emit(state.copyWith(incontrolLevelsList: null));
     await getincontrolList();
   }
 
   Future<void> delete(data) async {
     await addincontrolService.delete(data);
+    emit(state.copyWith(incontrolLevelsList: null));
     await getincontrolList();
   }
 }

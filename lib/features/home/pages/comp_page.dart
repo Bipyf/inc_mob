@@ -60,95 +60,7 @@ class CompPage extends StatelessWidget {
                                   state.incontrolLevelsList!.length,
                                   (index) => GestureDetector(
                                     onTap: () {
-                                      state.incontrolLevelsList![index]
-                                                  .condition ==
-                                              "На рабочем месте"
-                                          ? showModalBottomSheet(
-                                              context: context,
-                                              isScrollControlled: true,
-                                              shape: RoundedRectangleBorder(
-                                                borderRadius:
-                                                    BorderRadius.circular(24.r),
-                                              ),
-                                              builder: (BuildContext context) {
-                                                return Padding(
-                                                  padding: EdgeInsets.only(
-                                                      bottom:
-                                                          MediaQuery.of(context)
-                                                              .viewInsets
-                                                              .bottom),
-                                                  child: Container(
-                                                    padding:
-                                                        EdgeInsets.symmetric(
-                                                            horizontal: 20.h,
-                                                            vertical: 20.h),
-                                                    decoration: BoxDecoration(
-                                                      color: Theme.of(context)
-                                                          .colorScheme
-                                                          .background,
-                                                      borderRadius:
-                                                          BorderRadius.all(
-                                                              Radius.circular(
-                                                                  24.r)),
-                                                    ),
-                                                    child: Column(
-                                                      crossAxisAlignment:
-                                                          CrossAxisAlignment
-                                                              .start,
-                                                      mainAxisAlignment:
-                                                          MainAxisAlignment
-                                                              .start,
-                                                      mainAxisSize:
-                                                          MainAxisSize.min,
-                                                      children: [
-                                                        Center(
-                                                            child: Text(
-                                                          "Сообщить о неисправности",
-                                                          style:
-                                                              Theme.of(context)
-                                                                  .textTheme
-                                                                  .headline4,
-                                                        )),
-                                                        SizedBox(
-                                                          height: 12.h,
-                                                        ),
-                                                        SizedBox(
-                                                          height: 20.h,
-                                                        ),
-                                                        Text(
-                                                            'Наименование оборудования: MacBook Air M1 2020'),
-                                                        SizedBox(
-                                                          height: 12.h,
-                                                        ),
-                                                        Text(
-                                                            'Серийный номер: 6969696969'),
-                                                        SizedBox(
-                                                          height: 20.h,
-                                                        ),
-                                                        TextFieldLabel(
-                                                            label:
-                                                                'Опишите неисправность'),
-                                                        TextField(
-                                                          maxLines: null,
-                                                          onChanged: (value) {
-                                                            context.read<
-                                                                AppCubit>();
-                                                          },
-                                                        ),
-                                                        SizedBox(
-                                                          height: 30.h,
-                                                        ),
-                                                        incontrolElevatedButton(
-                                                            label: 'Отправить',
-                                                            onPressed: null,
-                                                            isActive: true)
-                                                      ],
-                                                    ),
-                                                  ),
-                                                );
-                                              })
-                                          : null;
-                                    },
+                                      },
                                     child: Container(
                                       padding: EdgeInsets.symmetric(
                                           vertical: 16.h, horizontal: 16.w),
@@ -180,7 +92,7 @@ class CompPage extends StatelessWidget {
                                           Column(
                                             children: [
                                               Image.asset(
-                                                'assets/images/macbook.jpeg',
+                                                'assets/images/macbook.png',
                                                 width: 130.w,
                                               ),
                                               Spacer()
@@ -201,7 +113,7 @@ class CompPage extends StatelessWidget {
                                                       .device_name,
                                                   style: TextStyle(
                                                     color:
-                                                        const Color(0xFF0D1526),
+                                                       Theme.of(context).colorScheme.inversePrimary,
                                                     fontWeight: FontWeight.w700,
                                                     fontStyle: FontStyle.normal,
                                                     fontSize: 16.sp,

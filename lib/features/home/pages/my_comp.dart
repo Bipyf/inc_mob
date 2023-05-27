@@ -120,7 +120,7 @@ class MyComp extends StatelessWidget {
                                                             state
                                                                 .incontrolLevelsList![
                                                                     index]
-                                                                .device_name),
+                                                                .device_name, style: TextStyle(color: Theme.of(context).colorScheme.inversePrimary)),
                                                         SizedBox(
                                                           height: 12.h,
                                                         ),
@@ -129,7 +129,7 @@ class MyComp extends StatelessWidget {
                                                                 .incontrolLevelsList![
                                                                     index]
                                                                 .id
-                                                                .toString()),
+                                                                .toString(), style: TextStyle(color: Theme.of(context).colorScheme.inversePrimary)),
                                                         SizedBox(
                                                           height: 20.h,
                                                         ),
@@ -207,7 +207,7 @@ class MyComp extends StatelessWidget {
                                           Column(
                                             children: [
                                               Image.asset(
-                                                'assets/images/macbook.jpeg',
+                                                'assets/images/macbook.png',
                                                 width: 130.w,
                                               ),
                                               Spacer()
@@ -228,7 +228,7 @@ class MyComp extends StatelessWidget {
                                                       .device_name,
                                                   style: TextStyle(
                                                     color:
-                                                        const Color(0xFF0D1526),
+                                                        Theme.of(context).colorScheme.inversePrimary,
                                                     fontWeight: FontWeight.w700,
                                                     fontStyle: FontStyle.normal,
                                                     fontSize: 16.sp,

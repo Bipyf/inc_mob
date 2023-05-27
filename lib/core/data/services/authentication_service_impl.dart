@@ -70,9 +70,10 @@ class AuthenticationServiceImpl implements AuthenticationService {
             return Left('error');
           }
        else {
-        _registerUserController.sink.add(true);
+       
         await saveUserTokenToSecureStorage(lol.data['token']);
         await saveUserRoleToSecureStorage(lol.data['role'], lol.data['id'].toString());
+         _registerUserController.sink.add(true);
         return const Right(null);
        }
       

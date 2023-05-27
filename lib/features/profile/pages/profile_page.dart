@@ -128,7 +128,7 @@ class ProfilePage extends StatelessWidget {
                                                           .lastname,
                                                   style: TextStyle(
                                                     color:
-                                                        const Color(0xFF0D1526),
+                                                        Theme.of(context).colorScheme.inversePrimary,
                                                     fontWeight: FontWeight.w700,
                                                     fontStyle: FontStyle.normal,
                                                     fontSize: 16.sp,
@@ -174,6 +174,7 @@ class ProfilePage extends StatelessWidget {
                         isActive: true,
                         label: "Выход",
                         onPressed: () async {
+
                           context.read<ProfileCubit>().signOut();
                           context
                               .read<AppCubit>()

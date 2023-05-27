@@ -129,16 +129,16 @@ class BottomNavigationBarincontrol extends StatelessWidget {
               case 3:
                 context
                     .read<AppCubit>()
-                    .navigateTo(const NavigationPage.posPage());
+                    .navigateTo(const NavigationPage.jobPage());
                 break;
               case 4:
                 context
                     .read<AppCubit>()
-                    .navigateTo(const NavigationPage.jobPage());
+                    .navigateTo(const NavigationPage.posPage());
                 break;
             }
           },
-          items: _itemsForRole(snapshot.data!)
+          items: _itemsForRole(snapshot.data ?? "Employee")
         ),
       ),
     );}

@@ -4,25 +4,25 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 ThemeData getDarkTheme() {
   const colorScheme = ColorScheme(
-    inversePrimary: Color(0xFF1E1E1E),
+    inversePrimary: Color.fromARGB(255, 233, 230, 230),
     //for texts
     outline: Color(0xFFFF8D24),
     brightness: Brightness.dark,
-    primary: Color(0xFF36CE7F),
+    primary: Color.fromARGB(255, 54, 138, 206),
     //gradient 1
-    onPrimary: Color(0xFFFFFFFF),
-    secondary: Color(0xFF34C288),
+    onPrimary: Color.fromARGB(255, 36, 36, 36),
+    secondary: Color.fromARGB(255, 52, 135, 194),
     //gradient 2
     onSecondary: Color(0xFFFFFFFF),
     error: Color(0xFFEE6868),
     onError: Color(0xFFFFFFFF),
     background: Color(0xFF1E1E1E),
-    onBackground: Color(0xFF37D288),
+    onBackground: Color.fromARGB(255, 55, 135, 210),
     //nav bar icons color
     surface: Color(0xFFFFFFFF),
     onSurface: Color(0xFF5A5A5A),
     // grey color for hints
-    tertiary: Color(0xFF31A89E), //gradient 3
+    tertiary: Color.fromARGB(255, 49, 136, 168), //gradient 3
     inverseSurface: Color(0xFFA2A2A2),
     surfaceTint: Color(0xFFF2F2F2),
   );
@@ -184,42 +184,42 @@ ThemeData getDarkTheme() {
         fontSize: 16.sp,
       ),
       headline1: TextStyle(
-        color: colorScheme.onPrimary,
+        color: colorScheme.inversePrimary,
         fontWeight: FontWeight.w700,
         fontStyle: FontStyle.normal,
         fontSize: 32.sp,
       ),
       // big thins like Login title and etc black ones
       headline2: TextStyle(
-        color: colorScheme.onPrimary,
+        color: colorScheme.inversePrimary,
         fontWeight: FontWeight.w700,
         fontStyle: FontStyle.normal,
         fontSize: 28.sp,
       ),
       //not so big as h1
       headline3: TextStyle(
-        color: colorScheme.onPrimary,
+        color: colorScheme.inversePrimary,
         fontWeight: FontWeight.w700,
         fontStyle: FontStyle.normal,
         fontSize: 24.sp,
       ),
       //something like a title of a page
       headline4: TextStyle(
-        color: colorScheme.onPrimary,
+        color: colorScheme.inversePrimary,
         fontWeight: FontWeight.w700,
         fontStyle: FontStyle.normal,
         fontSize: 20.sp,
       ),
       //Basically black text above description
       headline5: TextStyle(
-        color: const Color(0xFFA1A1A1),
+        color: colorScheme.inversePrimary,
         fontWeight: FontWeight.w400,
         fontStyle: FontStyle.normal,
         fontSize: 16.sp,
       ),
       // default t
       headline6: TextStyle(
-        color: const Color(0xFFA1A1A1),
+        color: colorScheme.inversePrimary,
         fontWeight: FontWeight.w400,
         fontStyle: FontStyle.normal,
         fontSize: 14.sp,

@@ -105,7 +105,7 @@ class SignUpCubit extends Cubit<SignUpState> {
       emit(_state.copyWith(status: LoginStatus.error, errorText: 'Error: Wrong username or password'));
     }, (r) async {
       print("succ");
-      emit(_state.copyWith(status: LoginStatus.success));
+      emit(_state.copyWith(status:  LoginStatus.success));
     });
   }
 
@@ -142,7 +142,8 @@ class SignUpCubit extends Cubit<SignUpState> {
   }
   Future<void> signOut() async {
      final _state = state as SignUpStateLogin;
+      emit(_state.copyWith(status: LoginStatus.initial));
      await authenticationService.signOut();
-     emit(_state.copyWith(status: LoginStatus.initial));
+    
   }
 }
